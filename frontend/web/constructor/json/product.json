@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "productId": 1,
+      "productName": "Куртка поварская ДЖАМБО-1",
+      "frontImgUrl": "http://996934.uy228250.web.hosting-test.net/constructor/img/povar_1.jpg",
+      "backImgUrl": "http://996934.uy228250.web.hosting-test.net/constructor/img/povar_1.jpg"
+    },
+    {
+      "productId": 2,
+      "productName": "Куртка поварская КЛАССИК",
+      "frontImgUrl": "http://996934.uy228250.web.hosting-test.net/constructor/img/povar_2.jpg",
+      "backImgUrl": "http://996934.uy228250.web.hosting-test.net/constructor/img/povar_2.jpg"
+    },
+    {
+      "productId": 3,
+      "productName": "Куртка поварская ЖУЛЬЕН", 
+      "frontImgUrl": "http://996934.uy228250.web.hosting-test.net/constructor/img/povar_3.jpg",
+      "backImgUrl": "http://996934.uy228250.web.hosting-test.net/constructor/img/povar_3.jpg"
+    }
+  ]
+}

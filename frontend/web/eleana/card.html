@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head lang = "ru">
+	<meta charset = "utf-8">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+	<title>Eleana Design</title>
+
+	<meta name = "description" content = "Title"/><!-- Description of the page -->
+	<meta name = "author" content = "Grebenyuk Viktor"><!-- Author Name -->
+
+	<link rel = "stylesheet" href = "css/libs.css"><!-- Custom Style -->
+	<link rel = "stylesheet" href = "css/bootstrap-select.min.css">
+	<link rel = "stylesheet" href = "css/style.css"><!-- Custom Style -->
+</head>
+<body>
+	<!--HEADER-->
+	<header>
+		<div class="header-top clearfix hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="auth pull-right ">
+						<a data-toggle="modal" href="#reg"><button class="btn reg">Регистрация</button></a>
+						<a data-toggle="modal" href="#login"><button class="btn login">Вход</button></a>
+						<span>Зарегистрируйтесь, чтобы получить СКИДКУ</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-5 logo-block">
+						<a href = "#"><img src = "img/logo.png" alt = "Logo"></a>
+					</div>
+					<div class="col-lg-4 col-md-3 col-sm-8 search-block">
+						<form class="form-inline">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-red"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+					<div class="col-lg-5 col-md-6 bsg-block hidden-sm hidden-xs">
+						<div class="contacts">
+							<div class="contcts-block">
+								<a class="tel" href = "tel:+7(903) 359-42-65">+7(903) 359-42-65</a>
+								<a class="tel" href = "tel:+7(8352) 75-05-75">+7(8352) 75-05-75</a>
+								<a class="email" href = "mailto:eleana_textil@mail.ru">eleana_textil@mail.ru</a>
+							</div>
+						</div>
+						<div class="bag">
+							<div class="bag-text">
+								<a data-toggle="modal" href="#bag"><button type="button" class="btn bag-btn"><i class="fa fa-shopping-cart"></i></button></a>
+								<p>В корзине <span class="text-red">1</span> товар
+								   на <span class="text-red">2 000</span> руб</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-footer">
+			<div class="container">
+				<div class="row">
+					<nav class="navbar navbar-default" role="navigation">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<button type="button" class="btn btn-red dropdown-toggle visible-sm visible-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Каталог</button>
+							<ul class = "dropdown-menu list-unstyled aside-menu">
+								<li>
+									<a class="collapse-link" role="button" data-toggle="collapse" href="#menu_mob" aria-expanded="true" aria-controls="collapseExample">
+										КАТАЛОГ
+									</a>
+									<div class="collapse in" id="menu_mob">
+										<ul>
+											<li class="active"><a href = "#">Униформа</a></li>
+											<li><a href = "#">Текстиль</a></li>
+											<li><a href = "#">Вышивка</a></li>
+											<li><a href = "#">Ткани</a></li>
+											<li><a href = "#">Обувь</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#" class="collapse-link">НОВИНКИ</a></li>
+								<li><a href="#" class="collapse-link">АКЦИИ</a></li>
+								<li>
+									<a class="collapse-link" role="button" data-toggle="collapse" href="#menu_mob2" aria-expanded="false" aria-controls="collapseExample">
+										РАЗМЕРНЫЕ ТАБЛИЦЫ <i class="fa fa-angle-down"></i>
+									</a>
+									<div class="collapse" id="menu_mob2">
+										<ul>
+											<li><a href = "#">Униформа</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a class="collapse-link clearfix" role="button" data-toggle="collapse" href="#menu_mob3" aria-expanded="false" aria-controls="collapseExample">
+										ФОТО-ПРАЙСЫ <i class="fa fa-angle-down"></i>
+									</a>
+									<div class="collapse" id="menu_mob3">
+										<ul>
+											<li><a href = "#">Униформа</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<a class="visible-sm visible-xs" data-toggle="modal" href="#bag"><button type="button" class="btn bag-btn"><i class="fa fa-shopping-cart"></i></button></a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">О компании</a></li>
+								<li><a href="#">Новинки</a></li>
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Оплата</a></li>
+								<li><a href="#">Сотрудничество</a></li>
+								<li><a class="border-none" href="#">Контакты</a></li>
+								<li class="hidden-xs hidden-sm"><button class="btn border-none">Задать вопрос</button></li>
+							</ul>
+							<div class="line"></div>
+							<ul class="nav navbar-nav visible-xs visible-sm">
+								<li class="footer-link"><a href="#">Портфолио</a></li>
+								<li><a class="footer-link" href="#">Авторское право</a></li>
+								<li><a class="footer-link" href="#">Условия возврата</a></li>
+								<li><a class="footer-link border-none" href="#">Дополнительная информация</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+								<li><a href="#">RU</a></li>
+								<li><a href="#">EN</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--HEADER END-->
+
+	<!--MAIN BEGIN-->
+	<main>
+		<div class = "container">
+			<div class = "row">
+				<div class="col-md-2 aside hidden-xs hidden-sm">
+					<ul class = "list-unstyled aside-menu">
+						<li>
+							<a class="collapse-link" role="button" data-toggle="collapse" href="#menu1" aria-expanded="true" aria-controls="collapseExample">
+								КАТАЛОГ
+							</a>
+							<div class="collapse in" id="menu1">
+								<ul>
+									<li class="active"><a href = "#">Униформа</a></li>
+									<li><a href = "#">Текстиль</a></li>
+									<li><a href = "#">Вышивка</a></li>
+									<li><a href = "#">Ткани</a></li>
+									<li><a href = "#">Обувь</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#" class="collapse-link">НОВИНКИ</a></li>
+						<li><a href="#" class="collapse-link">АКЦИИ</a></li>
+						<li>
+							<a class="collapse-link" role="button" data-toggle="collapse" href="#menu2" aria-expanded="false" aria-controls="collapseExample">
+								РАЗМЕРНЫЕ ТАБЛИЦЫ <i class="fa fa-angle-down"></i>
+							</a>
+							<div class="collapse" id="menu2">
+								<ul>
+									<li><a href = "#">Униформа</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a class="collapse-link clearfix" role="button" data-toggle="collapse" href="#menu3" aria-expanded="false" aria-controls="collapseExample">
+								ФОТО-ПРАЙСЫ <i class="fa fa-angle-down"></i>
+							</a>
+							<div class="collapse" id="menu3">
+								<ul>
+									<li><a href = "#">Униформа</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="widget hidden-sm hidden-xs">
+						<div class="img-block">
+							<img class="img-responsive" src = "img/widget.jpg" alt = "Foto">
+						</div>
+						<div class="widgrt-name">Фото-студиЯ</div>
+						<div class="line"></div>
+						<p>Tota accusata mel an. Vel viris mollis id. Cetero maiorum officiis est ne, mei an minimum tractatos, omnium ocurreret vix ei.</p>
+					</div>
+					<div class="widget hidden-sm hidden-xs">
+						<div class="img-block">
+							<img class="img-responsive" src = "img/widget.jpg" alt = "Foto">
+						</div>
+						<div class="widgrt-name">ДИЗАЙН-студиЯ</div>
+						<div class="line"></div>
+						<p>Tota accusata mel an. Vel viris mollis id. Cetero maiorum officiis est ne, mei an minimum tractatos, omnium ocurreret vix ei. </p>
+					</div>
+				</div>
+				<div class = "col-md-10 main-content">
+					<div class = "card-page">
+						<!-- breadcrumb begin -->
+						<ol class = "breadcrumb text-left">
+							<li><a href = "index.html">Главная</a></li>
+							<li class = "active"><i class = "fa fa-angle-double-right"></i>Куртка поворская</li>
+						</ol>
+						<!-- breadcrumb end -->
+
+						<!-- card begin -->
+						<div class = "card clearfix">
+							<!-- media title begin -->
+							<div class = "card__info--title media--title hidden-lg">
+								<div class = "title-wrapper clearfix">
+									<div class = "info-left">
+										Куртка поворская
+										<p>КЛАССИК</p>
+									</div>
+								</div>
+							</div>
+							<!-- media-title end -->
+							<!-- card__slider begin -->
+							<div class = "card__slider pull-left">
+								<!-- carousel begin -->
+								<div id = "carousel-example-generic" class = "carousel slide card-carousel"
+								     data-ride = "carousel">
+									<!-- Indicators -->
+									<ol class = "carousel-indicators">
+										<li data-target = "#carousel-example-generic" data-slide-to = "0" class = "active">
+											<img src = "img/card-small1-img.png" alt = "product">
+										</li>
+										<li data-target = "#carousel-example-generic" data-slide-to = "1">
+											<img src = "img/card-small-img.png" alt = "product">
+										</li>
+									</ol>
+
+									<!-- Wrapper for slides -->
+									<div class = "carousel-inner" role = "listbox">
+										<div class = "item active">
+											<img src = "img/card-big-img.png" alt = "product">
+										</div>
+										<div class = "item">
+											<img src = "img/card-big-img.png" alt = "product">
+										</div>
+									</div>
+								</div>
+								<!-- carousel end -->
+							</div>
+							<!-- card__slider end -->
+
+							<!-- card__info begin -->
+							<div class = "card__info pull-right">
+								<div class = "card__info--wrapper">
+									<div class = "card__info--title">
+										<div class = "title-wrapper clearfix">
+											<div class = "info-left">
+												Куртка поворская
+												<p>КЛАССИК</p>
+											</div>
+											<div class = "info-right info-code">00070</div>
+										</div>
+									</div>
+									<div class = "card__info--des">
+										<p>Артикул: <span class = "des-code">КП 031-1</span></p>
+										<div class = "des-price">
+											<p class = "price-before">Цена (до 50 размера): <span>650 р.</span></p>
+											<p class = "price-from">Цена (от 52 размера): <span>980 р.</span></p>
+										</div>
+										<p class = "des-status">Cтатус: <span>Под заказ</span><a href = "#"><i
+												class = "fa fa-info-circle" aria-hidden = "true"></i></a></p>
+										<span class = "des-text">При 100% предоплате срок изготовления 14-28 дней</span>
+									</div>
+									<!-- card__info-option begin -->
+									<div class = "card__info--option">
+										<form>
+											<div class = "form-wrapper clearfix">
+												<div class = "card__selection pull-left">
+													<div class = "selection-item">
+														<span class = "item-value">Цвет</span>
+														<select class = "selectpicker" title = "- Выберите значение -"
+														        multiple>
+															<option>Mustard</option>
+															<option>Ketchup</option>
+															<option>Relish</option>
+															<option>Onions</option>
+														</select>
+													</div>
+													<div class = "selection-item">
+														<span class = "item-value">Длина</span>
+														<select class = "selectpicker" title = "- Выберите значение -"
+														        multiple>
+															<option>Mustard</option>
+															<option>Ketchup</option>
+															<option>Relish</option>
+															<option>Onions</option>
+														</select>
+													</div>
+													<div class = "selection-item">
+														<span class = "item-value">Ширина</span>
+														<select class = "selectpicker" title = "- Выберите значение -"
+														        multiple>
+															<option>Mustard</option>
+															<option>Ketchup</option>
+															<option>Relish</option>
+															<option>Onions</option>
+														</select>
+													</div>
+												</div>
+												<!-- card__size begin -->
+												<div class = "card__size pull-right">
+													<div class = "size-title">Нет вашего размера?</div>
+													<div class = "size-item">
+														<label for = "size-length">Укажите длину</label>
+														<input type = "text" id = "size-length">
+													</div>
+													<div class = "size-item">
+														<label for = "size-width">Укажите ширину</label>
+														<input type = "text" id = "size-width">
+													</div>
+													<span class = "size-text">Стоимость товара расчитывается  индивидуально</span>
+												</div>
+												<!-- card__size end -->
+											</div>
+									</div>
+									<!-- card__buy begin -->
+									<div class = "card__buy">
+										<a href = "#" class = "btn"><i class = "fa fa-shopping-cart fa-2x"></i>Добавить в
+										                                                                       корзину</a>
+										<a href = "#" class = "print"><i class = "fa fa-print fa-2x"
+										                                 aria-hidden = "true"></i></a>
+									</div>
+									<!-- card__buy end -->
+									</form>
+								</div>
+								<!-- card__info-option end -->
+								<div class = "card__info--more">
+									<div class = "more-title" id = "more-title-js">
+										Дополнительная информация
+										<i class = "fa fa-chevron-down" aria-hidden = "true"></i>
+									</div>
+									<div class = "more-text" id = "more-text-js">
+										<p>Заказать <a href = "#">ВЫШИВКУ</a> на изделие</p>
+										<p>Как правильно выбрать <a href = "#">размер</a></p>
+										<p>Памятка по <a href = "#">УХОДУ</a> за изделием</p>
+									</div>
+								</div>
+							</div>
+							<!-- card__info end -->
+
+							<!-- card__characteristics begin -->
+							<div class = "card__characteristics">
+								<div class = "characteristics--title" id = "characteristics-title-js">
+									Технические характеристики
+									<i class = "fa fa-chevron-down" aria-hidden = "true"></i>
+								</div>
+								<ul class = "characteristics--list" id = "characteristics-text-js">
+									<li>Застежки: <span>Пукли</span></li>
+									<li>Длина рукава: <span>Короткий</span></li>
+									<li>Пол: <span>Женский</span></li>
+									<li>Профессия: <span>Повар</span></li>
+									<li>Стиль: <span>Классический</span></li>
+									<li>Класс: <span>Standart</span></li>
+									<li>Плотность: <span>120 гр.</span></li>
+									<li>Организация: <span>Общепит</span></li>
+								</ul>
+							</div>
+							<!-- card__characteristics end -->
+
+							<!-- card__product begin -->
+							<div class = "card__product">
+								<div class = "row">
+									<div class = "col-md-12">
+										<div class = "card__product--title">К этому товару можно подобрать следующие
+										                                    изделия
+										</div>
+									</div>
+									<div class = "col-md-4">
+										<div class = "product">
+											<div class = "product-head">
+												<p>Куртка поварская </p>
+												<div class = "product-name text-red text-uppercase">АНДРЕ</div>
+												<div class = "code text-center pull-right">
+													Код товара:
+													<span>00070</span>
+												</div>
+											</div>
+											<div class = "product-img">
+												<img class = "center-block" src = "img/product.jpg" alt = "Product">
+											</div>
+											<table class = "table">
+												<tbody>
+												<tr>
+													<td>Артикул:</td>
+													<td>КП 031-1</td>
+												</tr>
+												<tr>
+													<td>Состав:</td>
+													<td>40%хб-60%пэ</td>
+												</tr>
+												<tr>
+													<td>Цвет:</td>
+													<td>Белый</td>
+												</tr>
+												<tr>
+													<td>Cтатус:</td>
+													<td>Под заказ <i class = "fa fa-info-circle" aria-hidden = "true"></i>
+													</td>
+												</tr>
+												</tbody>
+											</table>
+											<div class = "price-block clearfix">
+												<div class = "old pull-left">2 000 руб.</div>
+												<div class = "new pull-right"><span class = "big">1 890</span> руб</div>
+											</div>
+											<div class = "btn bye text-uppercase btn-red btn-block"><i
+													class = "fa fa-shopping-cart"></i>КУПИТЬ
+											</div>
+										</div>
+									</div>
+									<div class = "col-md-4">
+										<div class = "product">
+											<div class = "product-head">
+												<p>Куртка поварская </p>
+												<div class = "product-name text-red text-uppercase">АНДРЕ</div>
+												<div class = "code text-center pull-right">
+													Код товара:
+													<span>00070</span>
+												</div>
+											</div>
+											<div class = "product-img">
+												<img class = "center-block" src = "img/product.jpg" alt = "Product">
+											</div>
+											<table class = "table">
+												<tbody>
+												<tr>
+													<td>Артикул:</td>
+													<td>КП 031-1</td>
+												</tr>
+												<tr>
+													<td>Состав:</td>
+													<td>40%хб-60%пэ</td>
+												</tr>
+												<tr>
+													<td>Цвет:</td>
+													<td>Белый</td>
+												</tr>
+												<tr>
+													<td>Cтатус:</td>
+													<td>Под заказ <i class = "fa fa-info-circle" aria-hidden = "true"></i>
+													</td>
+												</tr>
+												</tbody>
+											</table>
+											<div class = "price-block clearfix">
+												<div class = "old pull-left">2 000 руб.</div>
+												<div class = "new pull-right"><span class = "big">1 890</span> руб</div>
+											</div>
+											<div class = "btn bye text-uppercase btn-red btn-block"><i
+													class = "fa fa-shopping-cart"></i>КУПИТЬ
+											</div>
+										</div>
+									</div>
+									<div class = "col-md-4">
+										<div class = "product">
+											<div class = "product-head">
+												<p>Куртка поварская </p>
+												<div class = "product-name text-red text-uppercase">АНДРЕ</div>
+												<div class = "code text-center pull-right">
+													Код товара:
+													<span>00070</span>
+												</div>
+											</div>
+											<div class = "product-img">
+												<img class = "center-block" src = "img/product.jpg" alt = "Product">
+											</div>
+											<table class = "table">
+												<tbody>
+												<tr>
+													<td>Артикул:</td>
+													<td>КП 031-1</td>
+												</tr>
+												<tr>
+													<td>Состав:</td>
+													<td>40%хб-60%пэ</td>
+												</tr>
+												<tr>
+													<td>Цвет:</td>
+													<td>Белый</td>
+												</tr>
+												<tr>
+													<td>Cтатус:</td>
+													<td>Под заказ <i class = "fa fa-info-circle" aria-hidden = "true"></i>
+													</td>
+												</tr>
+												</tbody>
+											</table>
+											<div class = "price-block clearfix">
+												<div class = "old pull-left">2 000 руб.</div>
+												<div class = "new pull-right"><span class = "big">1 890</span> руб</div>
+											</div>
+											<div class = "btn bye text-uppercase btn-red btn-block"><i
+													class = "fa fa-shopping-cart"></i>КУПИТЬ
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- card__product end -->
+							</div>
+							<!-- card end -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!--MAIN END-->
+
+	<!--FOOTER BEGIN-->
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<nav class="navbar navbar-default visible-md visible-lg" role="navigation">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav">
+								<li class="active footer-link"><a href="#">Портфолио</a></li>
+								<li><a class="footer-link" href="#">Авторское право</a></li>
+								<li><a class="footer-link" href="#">Условия возврата</a></li>
+								<li><a class="footer-link border-none" href="#">Дополнительная информация</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><button class="btn btn-red">Панель управления</button></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="footer-med">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 hidden-xs">
+						<div class="footer-logo">
+							<a href = "#"><img src = "img/logo.png" alt = "Logo"></a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="footer-contacts">
+							<ul class = "list-unstyled phone-icon">
+								<li><a class="phone-link" href = "tel:+7(903) 359-42-65">+7(903) 359-42-65</a></li>
+								<li><a class="phone-link" href = "tel:+7(8352) 75-05-75">+7(8352) 75-05-75</a></li>
+							</ul>
+							<ul class = "list-unstyled">
+								<li>Пн-Пт: с 8.00 до 20.00 (по МСК)</li>
+								<li><a href = "mailto:eleana_textil@mail.ru">eleana_textil@mail.ru</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="footer-soc">
+							<a class="soc-link" href = "#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a class="soc-link" href = "#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a class="soc-link" href = "#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a class="soc-link" href = "#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>© eleana.ru All right reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--FOOTER END-->
+
+	<div class="modal fade" id="bag">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Товар добавлен в корзину</h4>
+				</div>
+				<div class="modal-body">
+					Modal body ...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<div class="modal fade" id="login">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Вход в учетную запись</h4>
+				</div>
+				<div class="modal-body">
+					<form action="" method="POST" role="form">
+						<div class="form-group">
+							<input type="text" class="form-control" name="" placeholder="Имя пользователя" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="" placeholder="Пароль" required>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Запомнить меня
+							</label>
+							<a href = "#" class = "text-red pull-right">Забыли пароль?</a>
+						</div>
+						<button type="submit" class="btn btn-red">Войти</button>
+					</form>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<div class="modal fade" id="reg">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Регистрация</h4>
+				</div>
+				<div class="modal-body">
+					<form action="" method="POST" role="form">
+						<div class="form-group">
+							<input type="text" class="form-control" name="" placeholder="Имя пользователя" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="" placeholder="E-mail" required>
+						</div>
+						<button type="submit" class="btn btn-red">Регистрация</button>
+					</form>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+<script src = "js/libs.min.js"></script><!-- Custom Library -->
+<script src = "js/bootstrap-select.min.js"></script>
+<script src = "js/app.js"></script><!-- Custom Library -->
+</body>
+</html>
