@@ -43,7 +43,8 @@ return [
         'view' => [
             'theme' => [
                 'pathMap' => [
-                    '@app/views' => '@app/themes/adminlte2/views/'
+                    '@app/views' => '@app/themes/adminlte2/views/',
+                    '@dektrium/user/views' => '@backend/views/user'
                 ],
             ],
         ],

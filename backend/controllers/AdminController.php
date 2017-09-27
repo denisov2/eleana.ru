@@ -15,7 +15,7 @@ namespace backend\controllers;
 
 //use dektrium\user\filters\AccessRule;
 use dektrium\user\Finder;
-use dektrium\user\models\Profile;
+use common\models\Profile;
 //use dektrium\user\models\User;
 use dektrium\user\models\UserSearch;
 use dektrium\user\helpers\Password;
@@ -340,6 +340,7 @@ class AdminController extends Controller
         Url::remember('', 'actions-redirect');
         $user    = $this->findModel($id);
         $profile = $user->profile;
+        $profile->setScenario(\common\models\Profile::SCENARIO_ADMIN_UPDATE);
 
         if ($profile == null) {
             $profile = \Yii::createObject(Profile::className());
@@ -375,8 +376,36 @@ class AdminController extends Controller
         Url::remember('', 'actions-redirect');
         $user = $this->findModel($id);
 
+
+
         return $this->render('_info', [
             'user' => $user,
+        ]);
+    }
+
+    public function actionUpdateDiscount($id)
+    {
+        Url::remember('', 'actions-redirect');
+        $user    = $this->findModel($id);
+        $profile = $user->profile;
+
+        if ($profile == null) {
+            $profile = \Yii::createObject(Profile::className());
+            $profile->link('user', $user);
+        }
+
+        $profile->setScenario(Profile::SCENARIO_ADMIN_UPDATE_DISCOUNT);
+
+        $this->performAjaxValidation($profile);
+
+        if ($profile->load(\Yii::$app->request->post()) && $profile->save()) {
+            \Yii::$app->getSession()->setFlash('success', 'Скидка назначена');
+            return $this->refresh();
+        }
+
+        return $this->render('_discount', [
+            'user' => $user,
+            'profile' => $profile,
         ]);
     }
 

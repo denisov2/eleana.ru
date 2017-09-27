@@ -6,6 +6,19 @@ return [
             'class' => 'yii\caching\FileCache',
         ],
 
+        'i18n' => [
+            'translations' => [
+                '*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@common/messages',
+                    'fileMap' => [
+                        'common' => 'common.php',
+                       // 'app/auth' => 'auth.php'
+                    ]
+                ],
+            ],
+        ],
+
         'currency' => [
             'class' => 'frontend\components\Currency',
         ],
